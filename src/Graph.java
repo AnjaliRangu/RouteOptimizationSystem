@@ -21,4 +21,7 @@ public class Graph {
     public Map<String, List<Edge>> getGraph() {
         return graph;
     }
+    public boolean cityExists(String city) {
+    return graph.containsKey(city);
+}
 }
