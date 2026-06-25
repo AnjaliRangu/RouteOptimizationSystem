@@ -16,6 +16,12 @@ public class Main {
         g.addCity("Nellore");
         g.addCity("Kurnool");
         g.addCity("Rajahmundry");
+        g.addCity("Guntur");
+        g.addCity("Nellore");
+        g.addCity("Kurnool");
+        g.addCity("Anantapur");
+        g.addCity("Karimnagar");
+
 
         g.addRoad("Hyderabad", "Warangal", 150);
         g.addRoad("Hyderabad", "Vijayawada", 275);
@@ -30,13 +36,22 @@ public class Main {
         g.addRoad("Kurnool", "Hyderabad", 220);
         g.addRoad("Rajahmundry", "Visakhapatnam", 190);
         g.addRoad("Vijayawada", "Rajahmundry", 150);
-
+        g.addRoad("Hyderabad", "Karimnagar", 165);
+        g.addRoad("Karimnagar", "Warangal", 80);
+        g.addRoad("Vijayawada", "Guntur", 35);
+        g.addRoad("Guntur", "Nellore", 280);
+        g.addRoad("Nellore", "Tirupati", 135);
+        g.addRoad("Kurnool", "Anantapur", 150);
+        g.addRoad("Hyderabad", "Kurnool", 220);
+        g.addRoad("Anantapur", "Tirupati", 280);
+        g.addRoad("Rajahmundry", "Visakhapatnam", 210);
         Scanner sc = new Scanner(System.in);
         int choice;
 
         System.out.println("\n===== ROUTE OPTIMIZATION SYSTEM =====");
         System.out.println("1. Find Shortest Route");
-        System.out.println("2. Exit");
+        System.out.println("2. Display All Cities");
+        System.out.println("3. Exit");
 
         System.out.print("Enter Choice: ");
         choice = sc.nextInt();
@@ -54,7 +69,12 @@ public class Main {
         System.out.println("Nellore");
         System.out.println("Kurnool");
         System.out.println("Rajahmundry");
-
+        System.out.println("Visakhapatnam");
+        System.out.println("Nellore");
+        System.out.println("Tirupati");
+        System.out.println("Kurnool");
+        System.out.println("Anantapur");
+        
         if (choice == 1) {
             System.out.print("\nEnter Source City: ");
             String source = sc.nextLine();
@@ -68,6 +88,20 @@ public class Main {
             }
 
         } else if (choice == 2) {
+            System.out.println("\nAvailable Cities:");
+            System.out.println("Hyderabad");
+            System.out.println("Warangal");
+            System.out.println("Karimnagar");
+            System.out.println("Khammam");
+            System.out.println("Vijayawada");
+            System.out.println("Guntur");
+            System.out.println("Rajahmundry");
+            System.out.println("Visakhapatnam");
+            System.out.println("Nellore");
+            System.out.println("Tirupati");
+            System.out.println("Kurnool");
+            System.out.println("Anantapur");
+        } else if (choice == 3) {
             System.out.println("Thank you for using Route Optimization System!");
         } else {
             System.out.println("Invalid Choice!");
